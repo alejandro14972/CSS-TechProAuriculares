@@ -9,9 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@700;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scroll.js"></script>
+    <script src="./js/elimnar-flecha.js"></script>
 </head>
 
 <body>
@@ -22,8 +25,8 @@
                     <source sizes="1920w" srcset="img/header.avif 1920w" type="image/avif">
                     <source sizes="1920w" srcset="img/header.webp 1920w" type="image/webp">
                     <source sizes="1920w" srcset="img/header.jpg 1920w" type="image/jpeg">
-                    <img loading="lazy" decoding="async" src="img/header.jpg" lazyalt="imagen" width="1000"
-                        height="600">
+                    <img loading="lazy" decoding="async" src="img/header.jpg" lazyalt="imagen" 
+                    width="1000" height="600">
                 </picture>
             </div>
 
@@ -39,10 +42,12 @@
                 </p>
             </div>
         </div>
-        <div class="flecha degradado-verde">
-            <span class="material-symbols-outlined">
-                arrow_downward
+        <div class="flecha degradado-verde eliminar">
+            <button onclick="scrollAbajo()" class="flecha degradado-verde">
+                <span class="material-symbols-outlined">
+                    arrow_downward
                 </span>
+            </button>
         </div>
     </header>
 
@@ -130,7 +135,7 @@
     <footer class="footer">
         <p>Todos los derechos reservados</p>
     </footer>
-    
+
 
 </body>
 
